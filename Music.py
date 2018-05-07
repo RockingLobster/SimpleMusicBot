@@ -101,7 +101,7 @@ class Music:
         """Summons the bot to join your voice channel."""
         summoned_channel = ctx.message.author.voice_channel
         if summoned_channel is None:
-            await self.bot.say('Are you sure your in a channel?')
+            await self.bot.say('Are you sure you are in a channel?')
             return False
 
         state = self.get_voice_state(ctx.message.server)
